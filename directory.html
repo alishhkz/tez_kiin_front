@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Directory</title>
+</head>
+<body>
+    <div class='wrapper'>
+        <header>
+            <a href="index.html">
+                <div class='logo'>
+                    <img src="img/Group 700.svg" alt="">
+                </div>
+            </a>
+            <a href="directory.html">
+                <div class='directory' style="margin-top:9px">
+                    <img src="img/Icon.svg" width="16px" height="12px" alt="">
+                    <span>DIRECTORY</span>
+                </div>
+            </a>
+            <div class='search' style="margin-top:9px">
+                <img src="img/search.svg" alt="">
+                <input type="text" placeholder="SEARCH"/>
+            </div>
+            <div class="components" style="margin-top:9px">
+                <img src="img/Component 1.svg" style="margin-right: 20px; cursor: pointer;" alt="">
+                <a href="#popup" class="popup-link"><img src="img/icon-profile.svg" style="cursor: pointer;" alt=""></a>
+            </div>
+        </header>
+    </div>
+    <div class="wrapper">   
+        <div class="dir_tab">
+            <div class="dir_tab-item"><a href="man.html"><span>MAN</span></a></div>
+            <div class="dir_tab-item"><a href="woman.html"><span>WOMAN</span></a></div>
+            <div class="dir_tab-item" style="width:155px"><a href=""><span>ACCESSORIES</span></a></div>
+            <div class="dir_tab-item"><a href=""><span>OUTLET</span></a></div>
+        </div>
+    </div>
+    <div class="dir">
+        <div class="dir__r"><a href=""><span>New in</span></a></div>
+        <div class="dir__r"><a href=""><span>Shirts</span></a></div>
+        <div class="dir__r"><a href=""><span>T-shirts & Polo Shirts</span></a></div>
+        <div class="dir__r"><a href=""><span>Jumpers & Cardigans</span></a></div>
+        <div class="dir__r"><a href=""><span>Coats & Jackets</span></a></div>
+        <div class="dir__r"><a href=""><span>Jeans</span></a></div>
+        <div class="dir__r"><a href=""><span>Trousers</span></a></div>
+        <div class="dir__r"><a href=""><span>Hoodies & Sweatshirts</span></a></div>
+        <div class="dir__r"><a href=""><span>Sale</span></a></div>
+        <div class="dir__r"><a href=""><span>View All</span></a></div>
+    </div>
+
+
+
+
+
+    <div class="login">
+        <div class="popup" id="popup">
+          <div class="popup_body">
+            <div class="popup_content">
+              <div class="popup__title">
+                ACCOUNT <a href="#header" class="popup__close popup-close">X</a>
+              </div>
+              <div class="pole">
+                <span>E-mail</span>
+                <input type="email" placeholder="E-mail" />
+              </div>
+              <div class="pole">
+                <span>Password</span>
+                <div style="position: relative">
+                  <input
+                    type="password"
+                    id="password-input-2"
+                    placeholder="Password"
+                    name="password"
+                  />
+                  <a
+                    href="#"
+                    class="password-control"
+                    onclick="return show_hide_password2(this);"
+                    style="width: 20px; height: 20px"
+                  ></a>
+                </div>
+              </div>
+              <div style="position:relative;">
+                <div style="margin-top: 30px; display: inline-block">
+                  <input
+                    style="border-radius: 50%"
+                    type="checkbox"
+                    id="rememberme"
+                    name="rememberme"
+                  />
+                  <label
+                    for="rememberme"
+                    style="font-size: 12px; margin-top: 30px"
+                    >Remember Me</label>
+                    <a href="reset_pass.html" class="forgot_pass">Forgot Password?</a>
+                </div>
+                <div></div>
+              </div>
+              <div class="save-btn">
+                <button>Sign In</button>
+                <div
+                  style="
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span style="color: #bbc2d0">No Account?</span
+                  ><a
+                    class="popup-link"
+                    href="#popup_2"
+                    style="text-decoration: none; color: #000"
+                    >Register</a
+                  >
+                  <br>
+                </div>
+              </div>
+              <div
+                class="sign-via"
+                style="display: flex; flex-direction: column; margin-top: 70px"
+              >
+                <button
+                  type="button"
+                  class=""
+                  style="width: 100%; text-align: left"
+                >
+                  <img
+                    src="img/Vect21r.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                    style="margin-right: 80px"
+                  />
+                  Sign In via E-mail
+                </button>
+                <br />
+                <button
+                  type="button"
+                  class=""
+                  style="width: 100%; text-align: left"
+                >
+                  <img
+                    src="img/google1.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                    style="margin-right: 80px"
+                  />
+                  Sign In via Google
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="register">
+        <div class="popup" id="popup_2">
+          <div class="popup_body">
+            <div class="popup_content">
+              <div class="popup__title">
+                REGISTRATION<a href="#header" class="popup__close popup-close"
+                  >X</a
+                >
+              </div>
+              <div class="pole">
+                <span>First Name</span>
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div class="pole">
+                <span>Phone Number</span>
+                <input type="number" placeholder="Phone Number" />
+              </div>
+              <div class="pole">
+                <span>E-mail</span>
+                <input type="email" placeholder="E-mail" />
+              </div>
+              <div class="pole">
+                <span>Password</span>
+                <div style="position: relative">
+                  <input
+                    type="password"
+                    id="password-input"
+                    placeholder="Password"
+                    name="password"
+                  />
+                  <a
+                    href="#"
+                    class="password-control"
+                    onclick="return show_hide_password(this);"
+                    style="width: 20px; height: 20px"
+                  ></a>
+                </div>
+              </div>
+              <div class="pole">
+                <div>
+                  <label class="agreement">
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                    Agree To The Use Of Cookies
+                  </label>
+                </div>
+              </div>
+  
+              <div class="save-btn">
+                <button>Register</button>
+                <div
+                  style="
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span style="color: #bbc2d0">Already Have An Account?</span
+                  ><a
+                    href="#popup"
+                    class="popup-link"
+                    style="text-decoration: none; color: #000"
+                    >Sign In</a
+                  >
+                </div>
+              </div>
+              <div
+                class="sign-via"
+                style="display: flex; flex-direction: column; margin-top: 70px"
+              >
+                <button
+                  type="button"
+                  class=""
+                  style="width: 100%; text-align: left"
+                >
+                  <img
+                    src="img/Vect21r.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                    style="margin-right: 80px"
+                  />
+                  Sign In via E-mail
+                </button>
+                <br />
+                <button
+                  type="button"
+                  class=""
+                  style="width: 100%; text-align: left"
+                >
+                  <img
+                    src="img/google1.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                    style="margin-right: 80px"
+                  />
+                  Sign In via Google
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="app.js"></script>
+      <script src="js/popup.js"></script>
+      <script src="js/hidepass.js"></script>
+      <script src="https://unpkg.com/imask"></script>
+      <script src="js/maska-nomera.js" type="text/javascript" ></script>
+
+      <script>
+          $('.phone_num').mask('+7 (999) 999-99-99');
+
+          $.fn.setCursorPosition = function(pos) {
+            if ($(this).get(0).setSelectionRange) {
+              $(this).get(0).setSelectionRange(pos, pos);
+            } else if ($(this).get(0).createTextRange) {
+              var range = $(this).get(0).createTextRange();
+              range.collapse(true);
+              range.moveEnd('character', pos);
+              range.moveStart('character', pos);
+              range.select();
+            }
+          };
+
+
+          $('input[type="tel"]').click(function(){
+              $(this).setCursorPosition(5);  // set position number
+            });
+    </script>
+</body>
+</html>

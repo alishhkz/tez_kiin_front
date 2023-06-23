@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Account Page</title>
+</head>
+<body>
+    <div class='wrapper'>
+        <header>
+            <a href="index.html">
+                <div class='logo'>
+                    <img src="img/Group 700.svg" alt="">
+                </div>
+            </a>
+            <a href="directory.html">
+                <div class='directory' style="margin-top:9px">
+                    <img src="img/Icon.svg" width="16px" height="12px" alt="">
+                    <span>DIRECTORY</span>
+                </div>
+            </a>
+            <div class='search' style="margin-top:9px">
+                <img src="img/search.svg" alt="">
+                <input type="text" placeholder="SEARCH"/>
+            </div>
+            <div class="components" style="margin-top:9px">
+                <img src="img/Component 1.svg" style="margin-right: 20px; cursor: pointer;" alt="">
+                <a href="#" class="popup-link"><img src="img/icon-profile.svg" style="cursor: pointer;" alt=""></a>
+            </div>
+        </header>
+    </div>
+
+    <div class="myacc_tabs">
+        <div class="tabs__nav">
+            <a class="tabs__nav-btn" href="my-account_page.html">MY ACCOUNT</a>
+            <a class="tabs__nav-btn active" href="my_orders_page.html">MY ORDERS</a>
+            <a class="tabs__nav-btn" data-tab="#tab_1">FAVORITES</a>
+            <a class="tabs__nav-btn" data-tab="#tab_2">RECEIPT<br> NOTIFICATIONS</a>
+            <a class="tabs__nav-btn" data-tab="#tab_3">LOGOUT</a>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__item">
+                <span style="font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                ">MY ACCOUNT</span>
+                <div class="pole">
+                    <span>First Name</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="pole">
+                    <span>E-mail</span>
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div class="pole">
+                    <span>Phone Number</span>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div style="font-weight: 500;font-size: 16px;line-height: 20px; cursor:pointer; margin-top:20px;">
+                    <a href="#" style="color: #000000; text-decoration: none; margin-right: 15px;">Password:</a><a href="#popup" class="popup-link" style="color: #565656; text-decoration: none;">Change Password</a>
+                </div>
+            </div>
+            <div class="parametres">
+                <span style="font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                ">MY PARAMETERS</span>
+                <div class="pole">
+                    <span>Bust Inches</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="pole">
+                    <span>Waist Inches</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="pole">
+                    <span>Hip Inches</span>
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+           <div class="save-btn">
+            <button>Save</button>
+           </div>
+        </div>
+        <div class="tabs__content active">
+            <div class="tabs__item" style="width: 100%;">
+                <div style="font-weight: 400;font-size: 18px;line-height: 22px;color: #000000; cursor: pointer; border-bottom: 2px solid #C9C8D3;display: inline;">
+                    <span class="my_order" data-order="#order_1" style="padding-right: 10px; margin-right: 5px;">Current Orders</span>
+                    <span class="my_order active" data-order="#order_2" style="padding-right: 10px; margin-right: 5px;">All Orders</span>
+                </div>
+                <div class="order-item" id="order_1">
+                    <!-- <div class="orders">
+                        <span>
+                            To place an order, go to the stores and add items <p> to the bagg</p>
+                        </span>
+                    </div>
+                    <div class="direct-btn">
+                    <button>Go To Directory</button>
+                    </div> -->
+                    <div class="order_info">
+                        <div class="in" style="display:flex; justify-content: space-between;">
+                            <span>Item NO.</span>
+                            <span>Price</span>
+                            <span>Quantity</span>
+                            <span>Date Of Registration</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="order-item active" id="order_2">
+                    <div class="order_info">
+                        <div class="in" style="display:flex; justify-content: space-between;">
+                            <span>Item NO.</span>
+                            <span>Price</span>
+                            <span>Quantity</span>
+                            <span>Date Of Registration</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        <div class="orders">
+                            <div class="no" style="display: flex; flex-direction: column;">
+                                <span style="color:#000000;font-weight: 600;font-size: 18px;line-height: 22px;margin-bottom: 4px;">№0001</span>
+                                <img src="img/man/image.png" width="80px" height="80px" alt="">
+                            </div>
+                            <div class="price"><span>32 000 KZT</span></div>
+                            <div class="quantity" style="width: 30px;"><span>1 pc</span></div>
+                            <div clas="data-register"><span>23 June 2022</span></div>
+                            <div class="status"><span>In Processing</span></div>
+                            <div class="order_detail"><a href="ordel_details.html">Order Details</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="tabs__content" id="tab_1">
+            <div class="tabs__item">
+                <p style="font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000; margin-right: 15px; cursor: pointer;
+                ">FAVORITES</p>
+                <div class="favs">
+                    <div class="favs-item">
+                        <img src="img/Frame 352-1.png" width="238px" height="238px" alt="">
+                        <span class="favs-name" style="font-weight: 600;font-size: 16px;line-height: 20px;color: #000000;margin-top: 20px">TALLIN LEATHER CROC BAG</span>
+                        <span class="favs-price" style="font-weight: 700;font-size: 18px;line-height: 22px;color: #000000;margin-top: 30px">70 000 KZT</span>
+                        <button style="padding: 10px 20px;background: #565656;border: 1px solid #565656; color:#fff;width: 147px;
+                        font-weight: 600;font-size: 16px;line-height: 20px; margin:20px 0; cursor: pointer;">ADD TO BAG</button>
+                    </div>
+                </div>
+
+           
+        </div>
+        </div>
+        <div class="tabs__content" id="tab_2">
+            <div class="tabs__item">
+                <p style="font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000; margin-right: 15px; cursor: pointer;
+                ">RECEIPT NOTIFICATIONS</p>
+                <p style="margin-top:30px">Product Is In Stock</p>
+                <div class="favs">
+                    <div class="favs-item">
+                        <img src="img/Frame 352-1.png" width="238px" height="238px" alt="">
+                        <span class="favs-name" style="font-weight: 600;font-size: 16px;line-height: 20px;color: #000000;margin-top: 20px">TALLIN LEATHER CROC BAG</span>
+                        <span class="favs-price" style="font-weight: 700;font-size: 18px;line-height: 22px;color: #000000;margin-top: 30px">70 000 KZT</span>
+                        <button style="padding: 10px 20px;background: #565656;border: 1px solid #565656; color:#fff;width: 147px;
+                        font-weight: 600;font-size: 16px;line-height: 20px; margin:20px 0; cursor: pointer;">ADD TO BAG</button>
+                    </div>
+                </div>
+
+           
+        </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="" class="popup__close"></a> 
+                    <div class="popup__title">Change Password</div>  
+                    <div class="pole">
+                        <span>Current Password</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="pole">
+                        <span>New Password</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="pole">
+                        <span>Confirm Password</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    
+                    <div class="save-btn">
+                        <button>Change</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <script src="app.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
